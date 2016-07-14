@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Inf-Yz-Uha">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEU-by-Gbg">
+                                <rect key="frame" x="200" y="100" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubZ-C3-EY1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGg-sw-yzk">
+                                <rect key="frame" x="200" y="360" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcQ-hs-Mud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIA-B6-GJC">
+                                <rect key="frame" x="200" y="230" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMi-1y-Axu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA9-hp-FLY">
+                                <rect key="frame" x="484" y="522" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cA9-hp-FLY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="458" id="7Rk-Qv-SeD"/>
+                            <constraint firstItem="qGg-sw-yzk" firstAttribute="top" secondItem="PIA-B6-GJC" secondAttribute="bottom" constant="30" id="CWy-oB-Jke"/>
+                            <constraint firstItem="qGg-sw-yzk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="296" id="Ftl-Y2-zZT"/>
+                            <constraint firstItem="PIA-B6-GJC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="HpD-N1-29E"/>
+                            <constraint firstItem="VEU-by-Gbg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Lec-HR-i2t"/>
+                            <constraint firstItem="PIA-B6-GJC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UKz-fO-dhQ"/>
+                            <constraint firstItem="PIA-B6-GJC" firstAttribute="centerX" secondItem="VEU-by-Gbg" secondAttribute="centerX" id="Z7O-i2-NAg"/>
+                            <constraint firstItem="cA9-hp-FLY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8e-5l-Une"/>
+                            <constraint firstItem="PIA-B6-GJC" firstAttribute="top" secondItem="VEU-by-Gbg" secondAttribute="bottom" constant="30" id="aH2-2w-HEs"/>
+                            <constraint firstItem="qGg-sw-yzk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byb-jW-vSO"/>
+                            <constraint firstItem="VEU-by-Gbg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="emf-lg-q5E"/>
+                            <constraint firstItem="qGg-sw-yzk" firstAttribute="centerX" secondItem="PIA-B6-GJC" secondAttribute="centerX" id="s5a-eM-R5y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MhU-be-guG"/>
+                    <connections>
+                        <outlet property="button1" destination="VEU-by-Gbg" id="15F-W4-fE6"/>
+                        <outlet property="button2" destination="PIA-B6-GJC" id="Qua-FX-xjB"/>
+                        <outlet property="button3" destination="qGg-sw-yzk" id="pzI-e1-EUw"/>
+                        <outlet property="scoretext" destination="cA9-hp-FLY" id="0c1-um-e0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OIn-vq-Nq2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Inf-Yz-Uha" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vnQ-JA-Haq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U8y-wI-cBz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQN-bK-KzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1013"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+    </resources>
+</document>
